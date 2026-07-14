@@ -12,7 +12,7 @@ const createUser = () => {
 };
   return (
     <div>
-      <form>
+      
        
         <br />
         <label >Email</label>
@@ -32,7 +32,7 @@ const createUser = () => {
         <br />
         <br />
         <button onClick={createUser}>Sign Up</button>
-      </form>
+    
     </div>
   )
 

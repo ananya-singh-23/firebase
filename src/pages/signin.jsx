@@ -10,16 +10,16 @@ const Signin = () => {
 const handleSignin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((value) => console.log("User signed in successfully!"))
-      .catch(
-        (err) => console.log("Error signing in!", error)    
-      );
-  };
+      .catch((err) => console.log("Error signing in!", err)    
+      );}
+  
 
   return (
     <div>
-      <form>
+    
        
         <br />
+        <h2>Sign In Page</h2>
         <label >Email</label>
         <input 
         onChange={(e) => setEmail(e.target.value)}
@@ -37,7 +37,7 @@ const handleSignin = () => {
         <br />
         <br />
         <button onClick={handleSignin}>Sign In</button>
-      </form>
+      
     </div>
   )
 

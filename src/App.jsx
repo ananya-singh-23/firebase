@@ -6,7 +6,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { Route, Routes } from "react-router-dom";
 import Adding from "./pages/adding.jsx";
 import Signin from "./pages/signin.jsx";
-
+import Navbar from "./components/navbar.jsx";
 const db = getDatabase(app);
 const auth = getAuth(app);
 
@@ -16,12 +16,7 @@ const App = () => {
   return (
     <div>
       <h1>Connect Firebase with React</h1>
-      <div>
-        <a href="/signup">Sign Up</a>
-        <a href="/adding">Adding</a>
-        <a href="/signin">Sign In</a>
-
-      </div>
+      <Navbar />
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
