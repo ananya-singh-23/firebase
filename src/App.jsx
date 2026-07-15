@@ -1,6 +1,6 @@
 import { getDatabase, ref, set } from "firebase/database";
 import React from "react";
-import { app } from "./firebase";
+import { app } from "./context/firebase.js";
 import Signup from "./pages/signup.jsx";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { Route, Routes } from "react-router-dom";
