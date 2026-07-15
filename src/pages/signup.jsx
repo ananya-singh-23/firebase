@@ -38,10 +38,11 @@ const signupWithGoogle = () => {
     <h2>or</h2>
     <br />
     
-<Link to="/signin">Already have an account? Sign In</Link>
     <Link to="/">
       <button onClick={() => signupWithGoogle() } >Sign Up with Google</button>
     </Link>
+    <br />
+    <Link to="/signin">Already have an account? Sign In</Link>
   </div>
   )
 
