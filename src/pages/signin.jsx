@@ -36,7 +36,7 @@ const handleSignin = () => {
         placeholder='Enter your password' />
         <br />
         <br />
-        <button onClick={handleSignin}>Sign In</button>
+        <button onClick={handleSignin} href="/">Sign In</button>
       
     </div>
   )
